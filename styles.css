@@ -1,0 +1,124 @@
+/* CSS Custom Properties */
+:root {
+  --color-primary: #2d3142;
+  --color-accent: #01cbbd;
+  --color-background: #f7f9fc;
+  --color-text: #1f2430;
+  --color-muted: #6b7280;
+
+  --max-width: 72rem;
+  --spacing: 1.5rem;
+  --radius: 0.5rem;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* Layout helpers */
+.container {
+  max-width: var(--max-width);
+  padding: var(--spacing);
+  margin-inline: auto;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.logo {
+  display: block;
+  padding: var(--spacing);
+}
+
+/* Main maintenance area */
+.maintenance {
+  min-height: calc(100vh - 8rem);
+  display: flex;
+  align-items: center;
+}
+
+.maintenance-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1,
+h2 {
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3.6rem);
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  max-width: 60ch;
+}
+
+/* Sections */
+section {
+  background-color: #ffffff;
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  border-left: 0.4rem solid var(--color-accent);
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-background);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 48rem) {
+  .maintenance-content {
+    gap: 2.5rem;
+  }
+}

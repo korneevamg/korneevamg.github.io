@@ -1,104 +1,79 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
-
-    <title>Maria Korneeva</title>
-    <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="SitePoint" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kanit"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Korneeva - IT Solutions: Wartungsarbeiten – Website vorübergehend nicht
+      verfügbar
+    </title>
+    <meta name="description" content="Korneeva - IT Solutions" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div id="top" class="row">
-      <div class="col-sm-10 offset-sm-1 col-lg-4 offset-lg-1">
-        <!-- first sreen -->
+    <header class="site-header">
+      <img
+        src="./logo.svg"
+        alt="Logo Korneeva - IT Solutions"
+        width="300"
+        class="logo"
+      />
+    </header>
 
-        <div
-          class="top-vertical-distance-sm bottom-vertical-distance-sm morph-item circle image"
-        >
-          <img src="./assets/round.png" alt="profile_picture" />
-        </div>
+    <main class="maintenance" id="main">
+      <div class="container maintenance-content">
+        <h1>Wir sind gleich wieder für dich da</h1>
 
-        <h1 class="name highlight-font">Maria Korneeva</h1>
-        <div class="top-vertical-distance-md centered">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/BrowserPerson"
-            class="fa fa-twitter morph-item circle neutral-gradient accent"
-          ></a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/maria-korneeva/"
-            class="fa fa-linkedin morph-item circle neutral-gradient accent"
-          ></a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://medium.com/@korneevamg"
-            class="fa fa-medium morph-item circle neutral-gradient  accent"
-          ></a>
-        </div>
-        <div class="top-vertical-distance-md centered">
-          <button
-            class="morph-item rounded-button highlight-font  accent-gradient"
-          >
-            <a class="neutral" href="#description"> Read more &#8595;</a>
-          </button>
-        </div>
-      </div>
-      <!-- second sreen -->
-      <div class="col-sm-10 offset-sm-1 col-lg-5 offset-lg-1">
-        <p
-          id="description"
-          class="default-text top-vertical-distance-lg bottom-vertical-distance-sm"
-        >
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32. The standard chunk of Lorem Ipsum used since the
-          1500s is reproduced below for those interested. Sections 1.10.32 and
-          1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-          reproduced in their exact original form, accompanied by English
-          versions from the 1914 translation by H. Rackham.
+        <p class="intro">
+          Diese Website wird gerade gewartet, um Inhalte zu verbessern und die
+          Barrierefreiheit weiter zu optimieren.
         </p>
-        <div class="back-to-top bottom-vertical-distance-md centered">
-          <a
-            href="#top"
-            class="fa morph-item circle neutral-gradient accent highlight-font"
-            >&#8593;</a
-          >
-        </div>
+
+        <section class="contact">
+          <h2>Kontakt</h2>
+          <ul>
+            <li>
+              <strong>E-Mail:</strong>
+              <a href="mailto:contact@browser-person.com">
+                contact@browser-person.com
+              </a>
+            </li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a
+                href="https://www.linkedin.com/in/maria-korneeva/"
+                rel="noopener"
+              >
+                Profil auf LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="resources">
+          <h2>Barrierefreies Web</h2>
+          <p>
+            In der Zwischenzeit findest du hier Informationen zu meinem Buch und
+            Workshops zum Thema barrierefreie Webentwicklung:
+          </p>
+          <p>
+            <a
+              href="https://www.barrierefreie-webentwicklung.com/"
+              rel="noopener"
+            >
+              Barrierefreie Webentwicklung - Von den Grundlagen über die
+              rechtlichen Aspekte bis zur praktischen Umsetzung
+            </a>
+          </p>
+        </section>
       </div>
-    </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Korneeva - IT Solutions</p>
+      </div>
+    </footer>
   </body>
 </html>
